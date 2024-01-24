@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "cassette",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ios-carki/Cassette.git",
+      "state" : {
+        "revision" : "aaab4991308c27e357570361480610fc2bc65f66",
+        "version" : "1.1.10"
+      }
+    },
+    {
+      "identity" : "tronweb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/james19870606/TronWeb.git",
+      "state" : {
+        "revision" : "b4aec8f28a1e6014f4ba6fed4f1d5d1e0cfcc349",
+        "version" : "1.1.4"
+      }
+    }
+  ],
+  "version" : 2
+}
