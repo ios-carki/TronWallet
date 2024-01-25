@@ -10,6 +10,7 @@ import Cassette
 
 struct AuthenticationView: View {
     weak var navigation: CustomNavigationController?
+    @StateObject private var viewModel = AuthenticationViewModel()
     
     var body: some View {
         ZStack {
@@ -36,6 +37,9 @@ struct AuthenticationView: View {
             }
             .padding(.horizontal, 16)
         }
+        .onAppear(perform: {
+            viewModel.setUpTron()
+        })
     }
 }
 

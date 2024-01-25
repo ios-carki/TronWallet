@@ -6,6 +6,7 @@
 
 import SwiftUI
 
+
 struct SendView: View {
     weak var navigation: CustomNavigationController?
     @StateObject private var viewModel = SendViewModel()
@@ -17,10 +18,13 @@ struct SendView: View {
             
             Divider()
             
+            TextField("Remark", text: $viewModel.remarkText)
+            
             TextField("To Address", text: $viewModel.toAddress)
             
             TextField("Amount", text: $viewModel.amountText)
         })
+        .padding(.horizontal, 16)
         .onAppear(perform: {
             viewModel.getBalance(address: address)
         })
